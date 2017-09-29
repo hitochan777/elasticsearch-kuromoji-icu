@@ -17,7 +17,7 @@ docker build --build-arg es_version=$version -t $USERNAME/$IMAGE:latest .
 git add -A
 git commit -m "version $version"
 git tag -a "$version" -m "version $version"
-git push
+git push origin master
 git push --tags
 
 docker tag $USERNAME/$IMAGE:latest $USERNAME/$IMAGE:$version
