@@ -2,12 +2,12 @@
 
 set -ex
 
-# docker hub username
+# # docker hub username
 USERNAME=hitochan777
-# image name
+# # image name
 IMAGE=elasticsearch-kuromoji-icu
-
-# bump version
+#
+# # bump version
 version=`cat VERSION`
 echo "version: $version"
 
